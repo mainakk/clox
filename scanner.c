@@ -196,7 +196,7 @@ Token scanToken() {
         case '/' : return makeToken(TOKEN_SLASH);
         case '*': return makeToken(TOKEN_STAR);
         case '!': return makeToken(
-            match('=') ? TOKEN_BANG : TOKEN_BANG_EQUAL);
+            match('=') ? TOKEN_BANG_EQUAL : TOKEN_BANG);
         case '=': return makeToken(
             match('=') ? TOKEN_EQUAL_EQUAL : TOKEN_EQUAL);
         case '<': return makeToken(
